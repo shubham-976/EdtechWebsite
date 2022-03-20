@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* ****** 1)*******Navigation Bar */
+.navbar
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top:0;
+    /* cursor: pointer; */
+}
+.logo
+{
+    width:14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+.logo img
+{
+    width:70%;
+    border:2px solid lime;
+    border-radius: 15px;
+    
+}
+.navlist
+{
+    width:70%;
+    /* background-color: black; */
+    display:flex;
+    align-items: center; /* for aligniing vertically means along y axis , same gap from top and bottom*/
+    /* justify-content: center; for aligning horizontally means along x axis, same gap from left and right. */
+
+}
+.navlist li
+{
+    list-style: none;
+    padding:26px;
+}
+.navlist li a
+{
+    text-decoration: none;
+    color:white;
+    padding:8px 16px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navlist li a:hover
+{
+    background-color: white;
+    color:black;
+    border-radius:10px;
+}
+.rightnav
+{
+    /* background-color: rgb(156, 135, 107); */
+    width:30%;
+    text-align: right;
+}
+.rightnav input
+{
+    text-align: center;
+}
+#search
+{
+    padding:5px;
+    font-size:17px;
+    border:2px solig grey;
+    border-radius: 9px;
+}
+
+/* For navigation bar background image */
+.background{
+    background:rgba(0,0,0,0.7) url('background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* ****** 2)********* For First Section */
+.main_box
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:70%;
+    height:80%;
+    margin:auto;
+}
+.first_section
+{
+    height:100vh;
+    
+}
+.first_half
+{  
+    width:50%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.second_half
+{
+    width:50%;
+    text-align: center;
+
+}
+.second_half img
+{
+    width: 65%;
+    border: 3px solid lime;
+    border-radius: 232px;
+    display: block;
+    margin: auto;
+}
+.big_text
+{
+    font-size: 44px;
+    font-family: 'Ubuntu';
+    text-align: center;
+    /* animation-name:anime1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; */
+}
+/* @keyframes anime1
+{
+    25%
+    {
+        color:white;
+    }
+    50%
+    {
+        color:rgb(248, 141, 18);
+    }
+    75%
+    {
+        color:cyan;
+    }
+    100%
+    {
+        color:lime;
+    }
+} */
+
+.small_text
+{
+    font-size:22px;
+    padding:19px;
+    font-family: 'Playfair Display';
+}
+.btn
+{
+    padding: 7px 15px;
+    margin: 10px 4px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    background:linear-gradient(red,blue);
+    color:chartreuse;
+    font-size: large;
+    cursor:pointer;
+}
+.btn_small
+{
+    padding:3px 10px;
+    vertical-align: middle;
+}
+.btn:hover
+{
+    background:linear-gradient(skyblue, white);
+    color:black;
+    border: 2px solid red;
+}
+
+/* The Next Section */
+.right_sec
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px 25px;
+    border:0.5px solid grey;
+    border-radius:8px;
+    background-color: rgb(250, 238, 236);
+}
+.left_sec
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px 25px;
+    border:0.5px solid grey;
+    border-radius:8px;
+    background-color: rgb(250, 238, 236);
+}
+.thumbnail img
+{
+    border:3px solid yellowgreen;
+    border-radius:50px;
+}
+
+/* Contact Section */
+.contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(216, 213, 213);
+    /* height:56vh; */
+}
+.text_center
+{
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+.form
+{
+    max-width: 60%;
+    margin:auto;
+}
+.form input, .form textarea
+{
+    width: 100%;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: large;
+    margin: 8px 0px;
+}
+.footer_
+{
+    text-align: center;
+    border:2px solid red;
+    background-color: #3b3838;;
+    color:white;
+    padding:8px 0px;
+    font-weight: bold;
+    font-size: 20px;;
+}
+
+/* **************************************************** */
+/* Making Responsive for Phone */
+/* Hamburger */
+.burger
+{
+    display:none;
+    position:absolute;
+    cursor:pointer;
+    right:3%;
+    top:15px;
+}
+.line
+{
+    width:39px;
+    background-color: white;
+    height:3.5px;
+    margin:6.5px 3px;
+}
